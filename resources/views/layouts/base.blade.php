@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -14,8 +14,8 @@
 </head>
 
 <body class="">
-
-    @livewire("counter")
+    <h1>test layouts</h1>
+    {{ $counter_slot }}
 
     @livewireScripts
 

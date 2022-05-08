@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/root', function () {
-    return view('root');
-});
+// Route::get('/root',App\Http\Livewire\Counter::class);
+Route::get('/counter/{id?}',App\Http\Livewire\Counter::class)->name('counter');
+Route::get('/child',App\Http\Livewire\Child::class)->name('child');
